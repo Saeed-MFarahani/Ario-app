@@ -1,34 +1,50 @@
 .device {
-  
+  --screenSize: 480px;
+  --zoom: 50%;
+
   border: 2px dashed #aaa;
   border-radius: 8px;
-  
+
   margin: auto;
 }
 .device-screen {
   position: relative;
-  transition: width 1s;
-  
-  width: 480px;
-  padding-top: calc(( 16/8 ) * 100%);
-  
-  zoom: 50%;
-}
-.device-screen[type="mobile"] {
-  width: 480px;
-}
-.device-screen[type="tablet"] {
-  width: 768px;
-}
-.device-screen[type="laptop"] {
-  width: 1024px;
-}
-.device-screen[type="computer"] {
-  width: 1200px;
-}
-.device-screen[type="television"] {
-  width: 1500px;
-}
-.device[orientation="landscape"]{
+  transition: all 1s;
 
+  width: var(--screenSize);
+  height: calc((16 / 8) * var(--screenSize));
+
+  zoom: var(--zoom);
+
+}
+.device[type="mobile"] {
+  --screenSize: 400px;
+}
+.device[type="tablet"] {
+  --screenSize: 624px;
+}
+.device[type="laptop"] {
+  --screenSize: 896px;
+}
+.device[type="laptop"] .device-screen {
+  width: var(--screenSize) !important;
+  height: calc((8 / 16) * var(--screenSize)) !important;
+}
+.device[type="computer"] {
+  --screenSize: 1300px;
+}
+.device[type="computer"] .device-screen {
+  width: var(--screenSize) !important;
+  height: calc((8 / 16) * var(--screenSize)) !important;
+}
+.device[type="television"] {
+  --screenSize: 1900px;
+}
+.device[type="television"] .device-screen{
+  width: var(--screenSize) !important;
+  height: calc((8 / 16) * var(--screenSize)) !important;
+}
+.device[landscape] .device-screen {
+  width: calc((16 / 8) * var(--screenSize));
+  height: var(--screenSize);
 }

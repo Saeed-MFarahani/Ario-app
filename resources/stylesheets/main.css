@@ -1,5 +1,6 @@
 @import url(Ario-UI/build/ario-ui-minify.css);
 @import url(viewport.css);
+@import url(toolbar.css);
 @import url(browser.css);
 @import url(device.css);
 body {

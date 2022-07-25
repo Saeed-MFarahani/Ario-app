@@ -1,9 +1,9 @@
 "use strict";
-const deviceScreen = document.querySelector(".device-screen");
+const deviceScreen = document.querySelector(".device");
 function resizeScreenMobile() {
     deviceScreen.setAttribute("type", "mobile");
 }
-function resizeScreentTablet() {
+function resizeScreenTablet() {
     deviceScreen.setAttribute("type", "tablet");
 }
 function resizeScreenLaptop() {
@@ -14,6 +14,9 @@ function resizeScreenComputer() {
 }
 function resizeScreenTV() {
     deviceScreen.setAttribute("type", "television");
+}
+function rotateScreen() {
+    deviceScreen.toggleAttribute("landscape");
 }
 define("library/include", ["require", "exports"], function (require, exports) {
     "use strict";
