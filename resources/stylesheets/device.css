@@ -1,0 +1,34 @@
+.device {
+  
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  
+  margin: auto;
+}
+.device-screen {
+  position: relative;
+  transition: width 1s;
+  
+  width: 480px;
+  padding-top: calc(( 16/8 ) * 100%);
+  
+  zoom: 50%;
+}
+.device-screen[type="mobile"] {
+  width: 480px;
+}
+.device-screen[type="tablet"] {
+  width: 768px;
+}
+.device-screen[type="laptop"] {
+  width: 1024px;
+}
+.device-screen[type="computer"] {
+  width: 1200px;
+}
+.device-screen[type="television"] {
+  width: 1500px;
+}
+.device[orientation="landscape"]{
+
+}

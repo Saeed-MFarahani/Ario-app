@@ -1,7 +1,15 @@
 @import url(Ario-UI/build/ario-ui-minify.css);
-
+@import url(viewport.css);
+@import url(browser.css);
+@import url(device.css);
 body {
   margin:  0;
   padding: 0;
+
+  height: 100vh;
+}
+*{
+  font-family: system-ui;
+  box-sizing: border-box;
 }
 
