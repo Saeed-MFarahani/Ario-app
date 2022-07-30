@@ -16,4 +16,7 @@
 
   overflow: auto;
   resize: both;
+
+  display: flex;
+  flex-direction: column;
 }

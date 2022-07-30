@@ -3,6 +3,8 @@
 @import url(toolbar.css);
 @import url(browser.css);
 @import url(device.css);
+@import url(application.css);
+
 body {
   margin: 0;
   padding: 0;

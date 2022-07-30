@@ -1,4 +1,5 @@
 @import url(screen-toolbar.css);
+@import url(element-toolbar.css);
 .toolbar-plate{
   background: #fff;
   box-shadow: #0004 0px 0px 15px;
@@ -17,3 +18,4 @@
 .toolbar-plate input.screen-zoom {
   width: 50px;
 }
+
