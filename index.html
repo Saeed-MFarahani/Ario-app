@@ -44,6 +44,18 @@
         <div class="toolbar-button" onclick="rotateScreen()">
           <object data="resources/icons/rotateRight.svg"></object>
         </div>
+
+        <select name="aspect" class="aspect-list">
+          <option value="2,0.5" selected>16:8</option>
+          <option value="1.7,0.5625">16:9</option>
+          <option value="1.6,0.625">16:10</option>
+          <option value="1.5,0.6">3:2</option>
+          <option value="1.3,0.75">4:3</option>
+          <option value="1.25,0.8">5:4</option>
+          <option value="1,1">1:1</option>
+        </select>
+
+        <input type="number" class="screen-zoom" value="50">
       </div>
     </div>
 

@@ -14,3 +14,6 @@
 .toolbar-button * {
   pointer-events: none;
 }
+.toolbar-plate input.screen-zoom {
+  width: 50px;
+}

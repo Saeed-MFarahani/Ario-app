@@ -4,13 +4,22 @@
 @import url(browser.css);
 @import url(device.css);
 body {
-  margin:  0;
+  margin: 0;
   padding: 0;
 
   height: 100vh;
 }
-*{
+*:not(.device *) {
   font-family: system-ui;
   box-sizing: border-box;
 }
 
+input:not(.device *),
+select:not(.device *),
+button:not(.device *)
+{
+  background: #0001;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}

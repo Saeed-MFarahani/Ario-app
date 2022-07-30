@@ -1,5 +1,7 @@
 .device {
   --screenSize: 480px;
+  --aspect-portrait:2;
+  --aspect-landscape:0.5;
   --zoom: 50%;
 
   border: 2px dashed #aaa;
@@ -12,39 +14,39 @@
   transition: all 1s;
 
   width: var(--screenSize);
-  height: calc((16 / 8) * var(--screenSize));
+  height: calc(var(--aspect-portrait) * var(--screenSize));
 
   zoom: var(--zoom);
 
 }
 .device[type="mobile"] {
-  --screenSize: 400px;
+  --screenSize: 480px;
 }
 .device[type="tablet"] {
-  --screenSize: 624px;
+  --screenSize: 700px;
 }
 .device[type="laptop"] {
-  --screenSize: 896px;
+  --screenSize: 1024px;
 }
 .device[type="laptop"] .device-screen {
   width: var(--screenSize) !important;
-  height: calc((8 / 16) * var(--screenSize)) !important;
+  height: calc(var(--aspect-landscape) * var(--screenSize)) !important;
 }
 .device[type="computer"] {
   --screenSize: 1300px;
 }
 .device[type="computer"] .device-screen {
   width: var(--screenSize) !important;
-  height: calc((8 / 16) * var(--screenSize)) !important;
+  height: calc(var(--aspect-landscape) * var(--screenSize)) !important;
 }
 .device[type="television"] {
-  --screenSize: 1900px;
+  --screenSize: 1600px;
 }
 .device[type="television"] .device-screen{
   width: var(--screenSize) !important;
-  height: calc((8 / 16) * var(--screenSize)) !important;
+  height: calc(var(--aspect-landscape) * var(--screenSize)) !important;
 }
 .device[landscape] .device-screen {
-  width: calc((16 / 8) * var(--screenSize));
+  width: calc(var(--aspect-portrait) * var(--screenSize));
   height: var(--screenSize);
 }
