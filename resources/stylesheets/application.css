@@ -1,0 +1,27 @@
+.browser *{
+  position: relative;
+}
+.browser *:hover {
+  resize: both;
+}
+.browser *:hover .debuger {
+  display: block;
+}
+.container {
+  min-width: 20px;
+  min-height: 20px;
+}
+.debuger{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background:#8854d020;
+   border:  dashed #8854d0;
+   zoom: 1;
+   pointer-events: none;
+}
+  

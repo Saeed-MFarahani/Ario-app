@@ -1,0 +1,22 @@
+.browser {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  min-width: 100px;
+  min-height: 100px;
+
+  border: 2px solid #aaa;
+  border-radius: 8px;
+
+  overflow: auto;
+  resize: both;
+
+  display: flex;
+  flex-direction: column;
+}

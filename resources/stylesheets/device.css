@@ -1,0 +1,52 @@
+.device {
+  --screenSize: 480px;
+  --aspect-portrait:2;
+  --aspect-landscape:0.5;
+  --zoom: 50%;
+
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+
+  margin: auto;
+}
+.device-screen {
+  position: relative;
+  transition: all 1s;
+
+  width: var(--screenSize);
+  height: calc(var(--aspect-portrait) * var(--screenSize));
+
+  zoom: var(--zoom);
+
+}
+.device[type="mobile"] {
+  --screenSize: 480px;
+}
+.device[type="tablet"] {
+  --screenSize: 700px;
+}
+.device[type="laptop"] {
+  --screenSize: 1024px;
+}
+.device[type="laptop"] .device-screen {
+  width: var(--screenSize) !important;
+  height: calc(var(--aspect-landscape) * var(--screenSize)) !important;
+}
+.device[type="computer"] {
+  --screenSize: 1300px;
+}
+.device[type="computer"] .device-screen {
+  width: var(--screenSize) !important;
+  height: calc(var(--aspect-landscape) * var(--screenSize)) !important;
+}
+.device[type="television"] {
+  --screenSize: 1600px;
+}
+.device[type="television"] .device-screen{
+  width: var(--screenSize) !important;
+  height: calc(var(--aspect-landscape) * var(--screenSize)) !important;
+}
+.device[landscape] .device-screen {
+  width: calc(var(--aspect-portrait) * var(--screenSize));
+  height: var(--screenSize);
+}

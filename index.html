@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Ario app</title>
+
+    <link rel="stylesheet" href="resources/stylesheets/main.css" />
+  </head>
+  <body>
+    <div class="viewport">
+      <div class="device">
+        <div class="device-screen">
+          <div class="browser">
+            <div class="container" style="height: 100px;">
+              <div class="debuger"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen-toolbar">
+      <div class="toolbar-plate">
+
+        <div class="toolbar-button" onclick="resizeScreenMobile()">
+          <object data="resources/icons/phone.svg"></object>
+        </div>
+        <div class="toolbar-button" onclick="resizeScreenTablet()">
+          <object data="resources/icons/tablet.svg"></object>
+        </div>
+        <div class="toolbar-button" onclick="resizeScreenLaptop()">
+          <object data="resources/icons/laptop.svg"></object>
+        </div>
+        <div class="toolbar-button" onclick="resizeScreenComputer()">
+          <object data="resources/icons/desktop.svg"></object>
+        </div>
+        <div class="toolbar-button" onclick="resizeScreenTV()">
+          <object data="resources/icons/tv.svg"></object>
+        </div>
+        <div class="toolbar-button" onclick="rotateScreen()">
+          <object data="resources/icons/rotateRight.svg"></object>
+        </div>
+
+        <select name="aspect" class="aspect-list">
+          <option value="2,0.5" selected>16:8</option>
+          <option value="1.7,0.5625">16:9</option>
+          <option value="1.6,0.625">16:10</option>
+          <option value="1.5,0.6">3:2</option>
+          <option value="1.3,0.75">4:3</option>
+          <option value="1.25,0.8">5:4</option>
+          <option value="1,1">1:1</option>
+        </select>
+
+        <input type="number" min="1" class="screen-zoom" value="50">
+      </div>
+    </div>
+
+    <div class="element-toolbar">
+      <div class="toolbar-plate">
+        <div class="toolbar-button">
+          <object data="resources/icons/box.svg"></object>
+        </div>
+      </div>
+    </div>
+
+    <script
+      data-main="resources/javascripts/main.js"
+      src="./resources/javascripts/library/require.js"></script>
+  </body>
+</html>

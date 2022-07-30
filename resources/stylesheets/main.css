@@ -1,0 +1,27 @@
+@import url(Ario-UI/build/ario-ui-minify.css);
+@import url(viewport.css);
+@import url(toolbar.css);
+@import url(browser.css);
+@import url(device.css);
+@import url(application.css);
+
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100vh;
+}
+*:not(.device *) {
+  font-family: system-ui;
+  box-sizing: border-box;
+}
+
+input:not(.device *),
+select:not(.device *),
+button:not(.device *)
+{
+  background: #0001;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
