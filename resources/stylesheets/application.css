@@ -1,27 +1,36 @@
-.browser *{
+.browser * {
+  display: block;
   position: relative;
 }
-.browser *:hover {
+.device *:hover {
   resize: both;
 }
-.browser *:hover .debuger {
-  display: block;
+.device *[hovered]>.debuger {
+  background: #8854d020;
+  border-color: #8854d0;
+}
+.device *[selected]>.debuger {
+  background: #ff634720;
+  border-color: #ff6347;
 }
 .container {
+  display: flex;
   min-width: 20px;
   min-height: 20px;
+  justify-content: center;
+  align-items: center;
 }
-.debuger{
-  display: none;
+.container *{
+ flex: 1 1 auto;
+}
+.debuger {
+  transition: 0.2s;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-
-  background:#8854d020;
-   border:  dashed #8854d0;
-   zoom: 1;
-   pointer-events: none;
+  border: dashed #8854d020;
+  zoom: 1;
+  pointer-events: none;
 }
-  

@@ -4,6 +4,7 @@
 @import url(browser.css);
 @import url(device.css);
 @import url(application.css);
+@import url(property.css);
 
 body {
   margin: 0;
@@ -13,7 +14,9 @@ body {
 }
 *:not(.device *) {
   font-family: system-ui;
+  font-size: small;
   box-sizing: border-box;
+  user-select: none;
 }
 
 input:not(.device *),
@@ -22,6 +25,7 @@ button:not(.device *)
 {
   background: #0001;
   border-radius: 4px;
+  padding: 4px;
   outline: none;
   border: none;
 }

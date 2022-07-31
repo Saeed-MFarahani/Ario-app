@@ -5,11 +5,13 @@
   box-shadow: #0004 0px 0px 15px;
   padding: 8px;
   gap: 8px;
-  margin: 12px;
+  margin: 16px;
   border-radius: 8px;
   display: flex;
+  max-height: 100%;
 }
 .toolbar-button{
+  pointer-events: all;
   cursor: pointer;
 }
 .toolbar-button * {
