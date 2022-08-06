@@ -1,8 +1,9 @@
 @import url(screen-toolbar.css);
 @import url(element-toolbar.css);
 .toolbar-plate{
-  background: #fff;
-  box-shadow: #0004 0px 0px 15px;
+  background: #fff1;
+  backdrop-filter: blur(12px);
+  box-shadow: #0004 0px 0px 15px,#0001 0px 0px 15px inset;
   padding: 8px;
   gap: 8px;
   margin: 16px;

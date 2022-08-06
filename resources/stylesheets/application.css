@@ -30,7 +30,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  border: dashed #8854d020;
+  border: dashed transparent;
   zoom: 1;
   pointer-events: none;
 }
